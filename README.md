@@ -25,15 +25,15 @@ Base parameters: S0 = 100, K = 100, r = 0.02, T = 0.5, σ = 0.2, 1,000 paths, se
 
 **Call price rises with volatility.** The simulated price tracks the expected positive relationship across σ = 0.1 – 0.6.
 
-![Call price vs volatility](images/price_vs_volatility.png)
+![Call price vs volatility](image/price_vs_volatility.png)
 
 **Forward-difference Delta needs a sensible step size.** For very small h (below about 1e-13), floating-point error dominates and the estimate breaks down. For large h (above about 1), truncation error grows. In between, the estimate stays close to the analytical Delta.
 
-![Delta vs step size](images/delta_vs_step_size.png)
+![Delta vs step size](image/delta_vs_step_size.png)
 
 **Barrier level matters most near the spot price.** As the barrier B approaches S0, the down-and-out call loses value and the down-and-in call gains value. Their sum stays equal to the vanilla call (in-out parity).
 
-![Barrier option price vs barrier level](images/price_vs_barrier.png)
+![Barrier option price vs barrier level](image/price_vs_barrier.png)
 
 ## Run it
 
